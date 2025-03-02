@@ -3,7 +3,7 @@ import subprocess
 
 def add_user_to_group():
 	username = input("Enter the name of the user that you wantto addto agroup: ")
-	output = subprocess.Popen('groups', stdout=subprocess.PIPE).communicate()[0]
+	output = str(subprocess.Popen('groups', stdout=subprocess.PIPE).communicate()[0])
 	print("Enter a list of groups to add the user to")
 	print("The list should be separatedby spaces, for example:\r\n group1 group2 group3")
 	print("The available groups are:\r\n " + output)
