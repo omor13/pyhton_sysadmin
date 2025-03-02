@@ -35,3 +35,4 @@ def add_user_to_group():
 				os.system("sudo usermod -aG " + groupString + username)
 				print("User '" + username + "' added")
 
+add_user_to_group()
