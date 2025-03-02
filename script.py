@@ -30,3 +30,5 @@ def install_or_remove_packages():
                 elif choice == "N":
                     os.system("sudo dnf " + iOrR + "" + packages)
                     break
+
+install_or_remove_packages()
